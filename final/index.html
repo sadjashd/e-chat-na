@@ -1,0 +1,221 @@
+<html>
+<head>
+<title> Home </title>
+</head>
+
+<body>
+<div class="menu-bar">
+<ul>
+<li class="active"><a href="#">Home</a></li>
+<li><a href="faqs.html">Faqs</a></i></li>
+<li><a href="julianna.html">Developers</a>
+ <li><a href="lastna.html">Sign Up as Volunteers</a>
+</div>
+</li>
+</ul>
+</div>
+<div class="logo">
+    <img src="julie.png.png" alt="" height="90px" width="90px">
+</div>
+        <div class="welcome-text">
+            <h1>E-CHAT-NA</h1>
+            <p>"Perish the endeavor and glance over for our brighter future!"</p>
+			
+	<!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "102076149155344");
+      chatbox.setAttribute("attribution", "install_email");
+      chatbox.setAttribute("attribution_version", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v13.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>	
+<style>
+	*
+{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body
+{
+    background-image: url("angmaganda.png");
+    backdrop-filter: blur(5px);
+    background-size: cover;
+    background-position: center;
+    font-family: Cambria;
+	background repeat: no-repeat;
+}
+.menu-bar
+{
+    background: whitesmoke;
+    text-align: center;
+}
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: black;
+}
+.menu-bar ul li
+{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a
+{
+text-decoration: none;
+color: black;
+}
+.active, .menu-bar ul li:hover
+{
+background: rgb(146, 145, 145);
+border-radius: 3px;
+}
+.menu-bar .fa
+{
+    margin-right: 8px;
+}
+.sub-menu-1
+{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background: transparent;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted rgb(0, 0, 0);
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color: rgb(173, 163, 163);
+}
+.welcome-text h1
+{
+    font-family: Cambria;
+    text-align:center;
+    color:black;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-top: 50px;
+}
+.welcome-text p
+{
+    font-family:Georgia;
+    text-align: center;
+    color:black;
+    font-size: 20px;
+}
+
+.welcome-text
+{
+	width:100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: rgb(10, 0, 0);
+
+}
+
+button 
+{
+	width:200px;
+	padding:15px 0;
+	text-align:center;
+	margin:20px 10px;
+	border-radius:25px;
+	font-weight:bold;
+	border:2px solid #009688;
+	background:transparent;
+	color:#fff;
+	cursor:pointer;
+	position:relative;
+	overflow:hidden;
+}
+
+span
+{
+	background: #009688;
+	height: 100%;
+	width: 0%;
+	border-radius: 25px;
+	position: absolute;
+	left:0;
+	bottom:0;
+	z-index: -1;
+	transition: 0.5s;
+}
+
+button:hover span
+{
+	width: 100%;
+	
+}
+	
+button:hover
+{
+	border:none;
+	
+}
+	
+
+.logo
+{
+    display: block;
+    margin-left: 70px;
+    margin-right: auto;
+	height: auto;
+    width: 400px;
+	margin-top: -95px;
+	size: 200px;
+}
+
+</style>
+
+</body>
+ </html>
+ 
